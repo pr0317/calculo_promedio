@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Promedio de Notas</title>		
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1 class="titulo">Calculo de Promedio de Notas</h1>				
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Estudiantes</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>Nota 1</th>
+							<th>Nota 2</th>
+							<th>Nota 3</th>
+							<th>PROMEDIO</th>
+						</tr>
+					</thead>
+					<tbody id="tabla-estudiantes">
+						<tr class="estudiante">
+							<td class="info-nombre">Pablo</td>
+							<td class="info-nota_1">3.5</td>
+							<td class="info-nota_2">2.8</td>
+							<td class="info-nota_3">4.2</td>
+							<td class="info-promedio">0</td>
+						</tr>
+						
+					</tbody>
+				</table>
+
+			</section>
+
+			<!--Nuevo contenedor de datos en este caso un formulario-->
+			<section class ="container">
+				<h2 id="titulo-form">Adicione un nuevo estudiante</h2>
+
+				<form id="form-adicionar">
+					<div class="grupo">
+						<label for="nombre">NOMBRE</label>
+						<input id="nombre" name="nombre" type="text" placeholder="digite el nombre del estudiante" class="campo">
+					</div>
+
+					<div class="grupo">
+						<label for="nota_1">NOTA 1</label>
+						<input id="nota_1" name="nota_1" type="text" placeholder="digite la nota 1 del estudiante" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="nota_2">NOTA 2</label>
+						<input id="nota_2" name="nota_2" type="text" placeholder="digite la nota 2 del estudiante" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="nota_3">NOTA 3</label>
+						<input id="nota_3" name="nota_3" type="text" placeholder="digite la nota 3 del estudiante" class="campo campo-medio">
+					</div>
+
+					<button id="adicionar-estudiante" class="boton bto-principal">ADD</button>
+				</form>				
+			</section>
+		
+		</main>
+
+	<script src ="js/calcular_PROMEDIO.js"></script>
+	<script src ="js/form.js"></script>
+
+	</body>
+</html>
